@@ -1,5 +1,5 @@
 # docker-filebeat
-I use filebeat for monitoring server.log file from Payara or Glassfish
+monitoring server.log file from Payara or Glassfish
 
 Into filebeat.yml change IP address and port where your logstash ip and port or graylog ip and port.
 
