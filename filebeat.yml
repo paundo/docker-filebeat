@@ -1,0 +1,6 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /mnt/server.log
+output.logstash:
+  hosts: ["192.168.1.101:5043"]
