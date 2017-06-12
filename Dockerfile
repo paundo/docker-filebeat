@@ -22,5 +22,4 @@ RUN set -x && \
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
-COPY filebeat.yml /filebeat.yml
 CMD [ "filebeat", "-e" ]
