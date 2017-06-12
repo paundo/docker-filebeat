@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER PAUNDO <paundo@gmail.com>
+MAINTAINER paun <paundo@gmail.com>
 
 ENV FILEBEAT_VERSION=5.4.0 \
     FILEBEAT_SHA1=545fbb229c958f2379b17efe3825bf0c30e3039b
@@ -20,7 +20,6 @@ RUN set -x && \
   apt-get autoremove -y && \
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY filebeat.yml /filebeat.yml
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD [ "filebeat", "-e" ]
